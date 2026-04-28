@@ -1,4 +1,5 @@
 :root {
+    color-scheme: dark;
     --bg: #0b0c0f;
     --surface: #13151a;
     --border: #1e2129;
@@ -64,8 +65,8 @@
     content: '';
     position: absolute;
     top: -12px; left: -12px; right: 12px; bottom: -12px;
-    border: 1px solid var(--accent);
-    opacity: .35;
+    border: 2px solid var(--accent);
+    opacity: .65;
   }
 
   .hero-photo-wrap::after {
@@ -147,9 +148,9 @@
   .btn-primary:hover { background: #f0b840; transform: translateY(-2px); }
   .btn-ghost {
     background: transparent; color: var(--text);
-    border: 1px solid var(--border);
+    border: 1px solid #4a4f5c;
   }
-  .btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
+  .btn-ghost:hover { background: var(--accent); border-color: var(--accent); color: #0b0c0f; }
 
   /* ──── Ticker ──── */
   .ticker {
