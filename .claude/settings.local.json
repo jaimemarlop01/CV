@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(py --version)"
+    ]
+  },
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cd \"c:/Users/jaime/Documents/primer-projecto\" && git add -A && git diff --cached --quiet || (git commit -m \"Auto-commit: $(date '+%Y-%m-%d %H:%M')\" && git push origin main)",
+            "shell": "bash",
+            "statusMessage": "Guardando cambios en GitHub..."
+          }
+        ]
+      }
+    ]
+  }
+}
