@@ -8,8 +8,20 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
   <meta name="color-scheme" content="dark">
   <link rel="stylesheet" href="css/styles.css">
+  <style>
+  .back-bar{display:flex;align-items:center;justify-content:space-between;padding:0 40px;height:44px;border-bottom:1px solid var(--border);background:var(--surface)}
+  .back-link{display:inline-flex;align-items:center;gap:10px;font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);text-decoration:none;transition:color .2s}
+  .back-link:hover{color:var(--accent)}
+  .back-link::before{content:'←';font-size:13px}
+  .cv-badge{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:#0b0c0f;background:var(--accent);padding:4px 12px}
+  </style>
 </head>
 <body>
+
+<div class="back-bar">
+  <a class="back-link" href="index.html">Ver perfiles por rol</a>
+  <span class="cv-badge">CV Completo</span>
+</div>
 
 <!-- HERO -->
 <section class="hero">
@@ -132,7 +144,7 @@
 </div>
 
 <footer>
-  <span>Jaime Martínez López — 2025</span>
+  <span>Jaime Martínez López — 2026</span>
   <span>Desarrollador Web &amp; Multiplataforma</span>
 </footer>
 
