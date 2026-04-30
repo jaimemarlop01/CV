@@ -107,7 +107,7 @@ $role_key = isset($_GET['role']) ? trim($_GET['role']) : '';
 
 if (!array_key_exists($role_key, $roles)) {
     // Rol no válido → redirigir a la landing de reclutadores
-    header('Location: for-recruiters.php');
+    header('Location: index.php');
     exit;
 }
 
@@ -209,8 +209,8 @@ $ticker_text = $r['ticker'] . ' · ' . $r['ticker'] . ' ·';
 
 <!-- Barra superior -->
 <div class="back-bar">
-  <a class="back-link" href="for-recruiters.php">Volver a selección de perfil</a>
-  <a class="full-cv-link" href="index.html?full">Ver CV completo</a>
+  <a class="back-link" href="index.php">Volver a selección de perfil</a>
+  <a class="full-cv-link" href="cv_completo.html">Ver CV completo</a>
   <span class="role-badge"><?= htmlspecialchars($r['banner']) ?></span>
 </div>
 
