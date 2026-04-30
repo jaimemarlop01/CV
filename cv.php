@@ -160,6 +160,22 @@ $ticker_text = $r['ticker'] . ' · ' . $r['ticker'] . ' ·';
 }
 .back-link:hover { color: var(--accent); }
 .back-link::before { content: '←'; font-size: 13px; }
+.full-cv-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-decoration: none;
+  border: 1px solid var(--border);
+  padding: 4px 12px;
+  transition: color .2s, border-color .2s;
+}
+.full-cv-link:hover { color: var(--accent); border-color: var(--accent); }
+.full-cv-link::after { content: '→'; font-size: 13px; }
 .role-badge {
   font-family: 'DM Mono', monospace;
   font-size: 10px;
@@ -194,6 +210,7 @@ $ticker_text = $r['ticker'] . ' · ' . $r['ticker'] . ' ·';
 <!-- Barra superior -->
 <div class="back-bar">
   <a class="back-link" href="for-recruiters.php">Volver a selección de perfil</a>
+  <a class="full-cv-link" href="index.html?full">Ver CV completo</a>
   <span class="role-badge"><?= htmlspecialchars($r['banner']) ?></span>
 </div>
 
